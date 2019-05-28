@@ -40,6 +40,8 @@ RUN apk update \
     && docker-php-ext-install mcrypt pdo_mysql soap intl zip \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
     && composer global require hirak/prestissimo \
+    && composer global require squizlabs/php_codesniffer \
+    && composer global require friendsofphp/php-cs-fixer \
     && apk del build-dependencies \
     && apk del libmcrypt-dev \
     && rm -rf /tmp/*
