@@ -39,7 +39,7 @@ RUN apk update \
     && docker-php-source delete \
     && docker-php-ext-install mcrypt pdo_mysql soap intl zip \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-    && composer global install hirak/prestissimo \
+    && composer global require hirak/prestissimo \
     && apk del build-dependencies \
     && apk del libmcrypt-dev \
     && rm -rf /tmp/*
