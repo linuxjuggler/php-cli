@@ -106,13 +106,13 @@ GD Support => enabled
 GD Version => bundled (2.1.0 compatible)
 FreeType Support => enabled
 FreeType Linkage => with freetype
-FreeType Version => 2.8.1
+FreeType Version => 2.9.1
 GIF Read Support => enabled
 GIF Create Support => enabled
 JPEG Support => enabled
 libJPEG Version => 8
 PNG Support => enabled
-libPNG Version => 1.6.34
+libPNG Version => 1.6.37
 WBMP Support => enabled
 XBM Support => enabled
 
